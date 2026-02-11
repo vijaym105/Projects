@@ -1,0 +1,52 @@
+.wrap{
+    height: 100%;
+    border-radius: 1rem;
+    overflow: hidden;
+    background-color: black;
+
+    ::-webkit-scrollbar{
+        display: none;
+    }
+    .nav{
+        width: 100%;
+        display: flex;
+        justify-content: start;
+        gap: 0.8rem;
+        align-items: center;
+        border-bottom: 1px solid rgba(245, 222, 179, 0.216);
+        padding-inline: 0.7rem;
+        padding-block: 0.5rem;
+    
+        .dots{
+            display: flex;
+            gap: 0.7rem;
+
+            .dot{
+                height: 14px;
+                width: 14px;
+                border-radius: 50%;
+                background-color: #fff;
+            
+            }
+            .red{
+                    background-color: rgb(244, 42, 42);
+                }
+            .yellow{
+                background-color: rgb(241, 241, 52);
+            }
+            .green{
+                background-color: rgb(57, 228, 57);
+            } 
+        }
+        .meta-data{
+            color: rgb(198, 194, 194);
+            font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+            font-weight: 550;
+        }
+    }
+
+    .content{
+        height: 100%;
+    }
+}
+ 
