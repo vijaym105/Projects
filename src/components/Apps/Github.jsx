@@ -12,7 +12,7 @@ const GitCard = ({ data = { id: 1, image: "", title: "", description: "", tags: 
 
     <div className="tags">
       {
-        data.tags.map(tag => <p className='tag' >{tag}</p>)
+        data.tags.map((tag, idx) => <p key={idx} className='tag' >{tag}</p>)
       }
     </div>
 
@@ -30,8 +30,8 @@ const Github = () => {
   return (
     <Wrapper>
       <div className="cards">
-                {githubData.map(project => {
-                    return <GitCard data={project} />
+                {githubData.map((project, id) => {
+                    return <GitCard key={id} data={project} />
                 })}
             </div>
     </Wrapper>
