@@ -1,7 +1,7 @@
 import React, { Children } from 'react'
 import { Rnd } from "react-rnd";
 import "./wrap.scss"
-import Github from '../Apps/Github';
+;
 
 
 const Wrapper = ({children, windowName, setWindowState}) => {
@@ -20,7 +20,7 @@ const Wrapper = ({children, windowName, setWindowState}) => {
                     <div className="dot green"></div>
                 </div>
                 <div className="meta-data">
-                    <p>--sh ver</p>
+                    <p>{windowName}</p>
                 </div>
             </div>
             <div className="content">
