@@ -2,7 +2,7 @@ import React from 'react'
 import Wrapper from '../TaskbarComp/Wrapper'
 import Terminal from 'react-console-emulator'
 import './cli.scss'
-const CLI = () => {
+const CLI = ({windowName ,  setWindowState}) => {
   const commands = {
     echo: {
       description: 'Echo a passed string.',
@@ -46,7 +46,7 @@ const CLI = () => {
   ]
 
   return (
-    <Wrapper>
+    <Wrapper windowName={windowName} setWindowState={setWindowState}>
       <div className="cli-app">
         <Terminal
           commands={commands}

@@ -23,12 +23,14 @@ const GitCard = ({ data = { id: 1, image: "", title: "", description: "", tags: 
   </div>
 }
 
-console.log(GitCard);
 
 
-const Github = () => {
+
+const Github = ({windowName , setWindowState}) => {
+  console.log(windowName,setWindowState);
+  
   return (
-    <Wrapper>
+    <Wrapper  windowName={windowName}  setWindowState ={setWindowState}>
       <div className="cards">
                 {githubData.map((project, id) => {
                     return <GitCard key={id} data={project} />

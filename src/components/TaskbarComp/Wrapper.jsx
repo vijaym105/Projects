@@ -4,7 +4,9 @@ import "./wrap.scss"
 import Github from '../Apps/Github';
 
 
-const Wrapper = ({children}) => {
+const Wrapper = ({children, windowName, setWindowState}) => {
+    console.log(windowName,setWindowState);
+    
   return (
     <Rnd
     default={{
@@ -13,7 +15,7 @@ const Wrapper = ({children}) => {
         <div className="wrap">
             <div className="nav">
                 <div className="dots">
-                    <div className="dot red"></div>
+                    <div onClick={()=> setWindowState(state =>({...state, [windowName]:false}))} className="dot red"></div>
                     <div className="dot yellow"></div>
                     <div className="dot green"></div>
                 </div>
