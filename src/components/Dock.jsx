@@ -8,7 +8,7 @@ const Dock = ({windowState ,  setWindowState}) => {
     <footer className='dock'>
         <div onClick={()=> {setWindowState(state =>({...state , github:true}))}} className="icon git"><img src="/doc-icon/github.svg" alt="" /></div>
         
-        <div onClick={()=>{setWindowState(state =>({...state, calender:true}))}} className="icon calender"><img src="/doc-icon/calender.svg" alt=""/></div>
+        <div onClick={()=>{window.open('https://calendar.google.com/calendar' , '_blank')}} className="icon calender"><img src="/doc-icon/calender.svg" alt=""/></div>
         <div onClick={()=> {setWindowState(state =>({...state , pdf:true}))}} className="icon pdf"><img src="/doc-icon/pdf.svg" alt=""/></div>
         <div onClick={()=> {setWindowState(state =>({...state , note:true}))}} className="icon note"><img src="/doc-icon/note.svg" alt=""/></div>
         <div onClick={()=> {setWindowState(state =>({...state , spotify:true}))}} className="icon spotify"><img src="/doc-icon/spotify.svg" alt=""/></div>
